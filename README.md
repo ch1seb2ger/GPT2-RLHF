@@ -28,11 +28,6 @@ uv run hf download bookcorpus/bookcorpus \
   --include 'plain_text/train/*.parquet' --local-dir datasets/books
 ```
 
-## Pretrained checkpoints
-
-Download the reward model and both PPO policies from the
-[Hugging Face model repository](https://huggingface.co/Cheese-Burger/gpt2-rlhf-checkpoints).
-
 ## Training
 
 After downloading the model and data, run these commands from the project root on a machine with a CUDA-capable GPU:
@@ -43,6 +38,10 @@ uv run python -m gpt2_rlhf.train policy
 ```
 
 The first command trains the reward model and saves it to `checkpoints/reward/`. If it succeeds, the second command loads that checkpoint, trains the policy with PPO, and saves it to `checkpoints/policy/`.
+
+## Trained checkpoints
+
+The [Hugging Face repository](https://huggingface.co/Cheese-Burger/gpt2-rlhf-checkpoints) contains the reward model and both PPO policies I trained using the commands in this README.
 
 ## Score and generate text
 
