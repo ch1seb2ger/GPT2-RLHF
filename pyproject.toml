@@ -1,0 +1,20 @@
+[project]
+name = "gpt2-rlhf"
+version = "0.1.0"
+description = "GPT-2 reward model training and PPO fine-tuning"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pyarrow",
+    "tensorboard",
+    "torch>=2.11",
+    "tqdm",
+    "transformers>=5,<6",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["gpt2_rlhf"]

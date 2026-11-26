@@ -1,0 +1,9 @@
+/.venv/
+/checkpoints/
+/datasets/
+/models/
+/logs/
+/uv.lock
+__pycache__/
+*.egg-info/
+.env
