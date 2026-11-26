@@ -28,6 +28,11 @@ uv run hf download bookcorpus/bookcorpus \
   --include 'plain_text/train/*.parquet' --local-dir datasets/books
 ```
 
+## Pretrained checkpoints
+
+Download the reward model and both PPO policies from the
+[Hugging Face model repository](https://huggingface.co/Cheese-Burger/gpt2-rlhf-checkpoints).
+
 ## Training
 
 After downloading the model and data, run these commands from the project root on a machine with a CUDA-capable GPU:
